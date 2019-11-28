@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once '../../src/Domain/GetSongsList.php';
+require_once '../../src/Infrastructure/GetSongsList.php';
 
 function testGetSongsList() {
     $songs = getSongs();
