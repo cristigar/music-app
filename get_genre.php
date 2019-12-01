@@ -11,7 +11,7 @@ function get_genre(): array{
 	$songs = getSongs();
 	$all_genre = [];
 	foreach ($songs as $song) {
-			$all_genre[] = $song['genre'];
+		$all_genre[] = $song['genre'];
 	}
 	return array_unique($all_genre);
 }
