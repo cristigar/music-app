@@ -6,9 +6,6 @@ error_reporting(E_ALL);
 
 include "GetSongsList.php";
 
-
-
-
 function get_genre(): array{
 
 	$songs = getSongs();
