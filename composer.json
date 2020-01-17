@@ -7,5 +7,15 @@
             "email": "cristian.garabagiu@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "src/Tests/"
+        }
+    },
     "require": {}
 }
