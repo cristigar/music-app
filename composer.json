@@ -1,0 +1,11 @@
+{
+    "name": "cristigar/music-app",
+    "type": "project",
+    "authors": [
+        {
+            "name": "cristigar",
+            "email": "cristian.garabagiu@gmail.com"
+        }
+    ],
+    "require": {}
+}
