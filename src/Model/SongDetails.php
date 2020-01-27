@@ -1,6 +1,6 @@
 <?php
 
-namespace Model;
+namespace App\Model;
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/../mysqliConnection.php';
 
@@ -50,7 +50,7 @@ class SongDetails
         $result = mysqli_query($this->connect, "SELECT * FROM uploaded_songs");
         $songs = [];
         while ($row = mysqli_fetch_assoc($result)) {
-            $songs[] = new \DTO\SongDetails($row['id'],$row['artist'], $row['title'], $row['genre'], $row['path']);
+            $songs[] = new \App\DTO\SongDetails($row['id'],$row['artist'], $row['title'], $row['genre'], $row['path']);
         }
         return $songs;
     }

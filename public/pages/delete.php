@@ -1,6 +1,6 @@
 <?php
 
-use Model\SongDetails;
+use App\Model\SongDetails;
 require_once $_SERVER['DOCUMENT_ROOT'] . '/../vendor/autoload.php';
 
 $delete = new SongDetails();
