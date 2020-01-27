@@ -1,0 +1,21 @@
+{
+    "name": "cristigar/music-app",
+    "type": "project",
+    "authors": [
+        {
+            "name": "cristigar",
+            "email": "cristian.garabagiu@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "src/Tests/"
+        }
+    },
+    "require": {}
+}
