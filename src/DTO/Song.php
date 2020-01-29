@@ -2,7 +2,7 @@
 
 namespace App\DTO;
 
-class SongDetails
+class Song
 {
     private int $id;
     private string $artist;

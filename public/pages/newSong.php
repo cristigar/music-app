@@ -2,12 +2,12 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/../vendor/autoload.php';
 
-use App\Model\SongDetails;
+use App\Model\Song;
 
 require_once 'navbar.html';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $model = new SongDetails();
+    $model = new Song();
     if ($model->uploadSong()) {?>
         <div class="alert alert-dark" role="alert">
             Song is Uploaded!

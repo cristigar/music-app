@@ -2,11 +2,11 @@
 
 namespace View;
 
-use App\Model\SongDetails;
+use App\Model\Song;
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/../vendor/autoload.php';
 
-$modelSongs = new SongDetails();
+$modelSongs = new Song();
 
 $songs = $modelSongs->getUploadSong();
 
@@ -15,8 +15,6 @@ require_once 'navbar.html';
 foreach ($songs as $song) {
     ?>
     <br>
-
-
         <div class="row">
             <div class="col-1">
 
@@ -33,7 +31,7 @@ foreach ($songs as $song) {
                 </figure>
             </div>
             <div class="col-1">
-               <a href="/pages/delete.php?id=<?=$song->getId();?>">Delete</a>
+               <a href="/pages/deleteSong.php?id=<?=$song->getId();?>">Delete</a>
             </div>
 
         </div>
